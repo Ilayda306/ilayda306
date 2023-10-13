@@ -1,173 +1,165 @@
 <!DOCTYPE html>
 <html lang="en">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-<style>
-    .topnav {
-            background-color:#000137;
-            overflow: hidden;
-    }
-    .topnav a {
-        float: left;
-        color: #f2f2f2;
-        text-align: center;
-        padding: 14px 16px;
-        text-decoration: none;
-        font-size: 17px;
-    } 
-    .topnav a.active-link {
-    background-color: #F0E2FF;
-    color: black;
-   }
- a:hover {
-        background-color: #B0DBF1;
-        color: black;
-    }
-  h1 {text-align: center;}
-  h2 {text-align: center;}
-  p {text-align: center;}
- table, th, td {
-  border:1px solid rgb(58, 58, 118);
- }
- tr:hover {background-color: #B0DBF1}
-</style>
-    <title>dashboard</title>
-  </head>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="navigation.css" rel="stylesheet" type="text/css">
+  <title>dashboard</title>
+  <meta name="description" content="A clear overview of my study.">
+</head>
 
   <body>
-    <div class="topnav">
-        <a href="index.html">Home</a>
-        <a href="profile.html">Profile</a>
-        <a class="active-link" href="dashboard.html">Dashboard</a>
-        <a href="faq.html">FAQ</a>
-        <a href="blog.html">Blog</a>
-        <a href="https://hz.nl/"><img src="https://hz.nl/assets/svg/hz-logo.svg" height="15" width="65"/></a>
-      </div>
-    <h2>Studiemonitor</h2>
-<table style="width:100%">
-  <tr>
-    <th>Kwartile</th>
-    <th>Courses</th>
-    <th>EC</th>
-    <th>Exams</th>
-    <th>Grading</th>
-  </tr>
-  <tr>
-    <td rowspan="4">1</td>
-    <td>Program- & Career Orientation (PCO)</td>
-    <td>2.5</td>
-    <td>Assessment website</td>
-    <td>-</td>
-  </tr>
-  <tr>
-    <td>Computer Science Basics (CSB)</td>
-    <td>5</td>
-    <td>Written knowledge test</td>
-    <td>-</td>
-  </tr>
-  <tr>
-    <td>Programming Basics (PBA)</td>
-    <td>5</td>
-    <td>Case study</td>
-    <td>-</td>
-  </tr>
-  <tr>
-    <td>IT Personality Project Week 1 (PPW1)</td>
-    <td>1.25</td>
-    <td>Portfolio</td>
-    <td>-</td>
-  </tr>
-  <tr>
-    <td rowspan="2">2</td>
-    <td>IT Personality 1 (ITP1)</td>
-    <td>1.25</td>
-    <td>Portfolio</td>
-    <td>-</td>
-  </tr>
-  <tr>
-    <td>Object-Oriented Programming (OOP)</td>
-    <td>10</td>
-    <td>Portfolio</td>
-    <td>-</td>
-  </tr>
-  <tr>
-    <td rowspan="2">3</td>
-    <td>Framework Development 1 (FDE1)</td>
-    <td>5</td>
-    <td>Case study</td>
-    <td>-</td>
-  </tr>
-  <tr>
-    <td>Framework Project 1 (FPR1)</td>
-    <td>7.5</td>
-    <td>Interview, Assignment and Case Study exam</td>
-    <td>-</td>
-  </tr>
-  <tr>
-    <td rowspan="3">4</td>
-    <td>Framework Project 2 (FPR2)</td>
-    <td>10</td>
-    <td>Final delivery, Report of acceptance tests and optional assessments, 
-        IT Development portfolio</td>
-    <td>-</td>
-  </tr>
-  <tr>
-    <td>IT Personality international week (PIW)</td>
-    <td>1.25</td>
-    <td>Portfolio</td>
-    <td>-</td>
-  </tr>
-  <tr>
-    <td>IT Personality 2 (ITP2)</td>
-    <td>1.25</td>
-    <td>Portfolio</td>
-    <td>-</td>
-  </tr>
-  <tr>
-    <td>1-4</td>
-    <td>Personal Professional Development: Exploration (PPD-E)</td>
-    <td>12.5</td>
-    <td>Test (Dutch), Test (English) and Criterium focused interview</td>
-    <td>-</td>
-  </tr>
-  <tr>
-    <td colspan="2">Total EC:</td>
-    <td colspan="1">60</td>
-    <td colspan="2">(+2.5 Personality)</td>
-  </tr>
-  <tr>
-    <td colspan="2">NBSA Boundary</td>
-    <td colspan="3">45</td>
-  </tr>
-</table><br>
+    <div class="topnav" class="my-div">
+      <a href="index.html">Home</a>
+      <a href="profile.html">Profile</a>
+      <a class="active-link" href="dashboard.html">Dashboard</a>
+      <a href="faq.html">FAQ</a>
+      <a href="blog.html">Blog</a>
+      <a class="centerimg" href="https://hz.nl/"><img src="https://hz.nl/assets/svg/hz-logo.svg" height="24" width="65" /></a>
+    </div>
+    <div class="sidebar">
+      <a href="https://hz.nl/uploads/documents/1.4-Over-de-HZ/1.4.3.-Regelingen-en-documenten/OERS/2023-2024/Juli/CER-HZ-Bachelor-full-time-2023-2024-DEF-version-20230720.pdf">CER</a>
+      <a href="https://hz.nl/uploads/documents/1.4-Over-de-HZ/1.4.3.-Regelingen-en-documenten/OERS/2021-2022/11.-Uitvoeringsregeling-OER-ICT-Voltijd-2021-2022.pdf">IR</a>
+      <a href="https://learn.hz.nl/my/">Learn</a>
+      <a href="https://teams.microsoft.com/_#/conversations/Algemeen?threadId=19:827654897ab746089c081f24aff1c984@thread.skype&messageId=1696930011818&replyChainId=1696930011818&ctx=channel">Teams</a>
+      <a href="https://hz.osiris-student.nl/#/voortgang/">Progress</a>
+      <a href="https://github.com/HZ-HBO-ICT">Github</a>
+    </div>
 
-<canvas id="myChart" style="width:100%;max-width:800px"></canvas>
-<script>
-  const xValues = [1,2,3,4,5,6,7,8,9,10,11,12];
-  const yValues = [2.5,7.5,12.5,13.75,15,25,30,37.5,47.5,48.75,50,62.5];
-  
-  new Chart("myChart", {
-    type: "line",
-    data: {
-      labels: xValues,
-      datasets: [{
-        fill: false,
-        lineTension: 0,
-        backgroundColor: "rgba(58, 58, 118,1.0)",
-        borderColor: "rgba(58, 58, 118,0.1)",
-        data: yValues
-      }]
-    },
-    options: {
-      legend: {display: false},
-      scales: {
-        yAxes: [{ticks: {min: 0, max:62.5}}],
+    <style>
+      img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
       }
-    }
-  });
-  </script>
+    </style>
+
+    <h1>Dashboard</h1>
+    <table style="width:90%" class="content">
+      <tr>
+        <th>Kwartile</th>
+        <th>Courses</th>
+        <th>EC</th>
+        <th>Exams</th>
+        <th>Grading</th>
+      </tr>
+      <tr>
+        <td rowspan="4">1</td>
+        <td>Program- & Career Orientation (PCO)</td>
+        <td>2.5</td>
+        <td>Assessment website</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td>Computer Science Basics (CSB)</td>
+        <td>5</td>
+        <td>Written knowledge test</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td>Programming Basics (PBA)</td>
+        <td>5</td>
+        <td>Case study</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td>IT Personality Project Week 1 (PPW1)</td>
+        <td>1.25</td>
+        <td>Portfolio</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td rowspan="2">2</td>
+        <td>IT Personality 1 (ITP1)</td>
+        <td>1.25</td>
+        <td>Portfolio</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td>Object-Oriented Programming (OOP)</td>
+        <td>10</td>
+        <td>Portfolio</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td rowspan="2">3</td>
+        <td>Framework Development 1 (FDE1)</td>
+        <td>5</td>
+        <td>Case study</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td>Framework Project 1 (FPR1)</td>
+        <td>7.5</td>
+        <td>Interview, Assignment and Case Study exam</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td rowspan="3">4</td>
+        <td>Framework Project 2 (FPR2)</td>
+        <td>10</td>
+        <td>Final delivery, Report of acceptance tests and optional assessments,
+          IT Development portfolio</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td>IT Personality international week (PIW)</td>
+        <td>1.25</td>
+        <td>Portfolio</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td>IT Personality 2 (ITP2)</td>
+        <td>1.25</td>
+        <td>Portfolio</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td>1-4</td>
+        <td>Personal Professional Development: Exploration (PPD-E)</td>
+        <td>12.5</td>
+        <td>Test (Dutch), Test (English) and Criterium focused interview</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td colspan="2">Total EC:</td>
+        <td colspan="1">60</td>
+        <td colspan="2">(+2.5 Personality)</td>
+      </tr>
+      <tr>
+        <td colspan="2">NBSA Boundary</td>
+        <td colspan="3">45</td>
+      </tr>
+    </table><br>
+
+    <canvas id="myChart" style="width:100%;max-width:800px" class="content"></canvas>
+    <script>
+      const xValues = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
+      const yValues = [2.5, 7.5, 12.5, 13.75, 15, 25, 30, 37.5, 47.5, 48.75, 50, 62.5];
+
+      new Chart("myChart", {
+        type: "line",
+        data: {
+          labels: xValues,
+          datasets: [{
+            fill: false,
+            lineTension: 0,
+            backgroundColor: "rgba(58, 58, 118,1.0)",
+            borderColor: "rgba(58, 58, 118,0.1)",
+            data: yValues
+          }]
+        },
+        options: {
+          legend: { display: false },
+          scales: {
+            yAxes: [{ ticks: { min: 0, max: 62.5 } }],
+          }
+        }
+      });
+    </script>
   </body>
+  
 </html>
